@@ -4,6 +4,7 @@ Entwurfsseite mit vier Design-Richtungen für die neue Startseite von Fares Chah
 
 Ansehen:
 - Runde 2 (Rad als Kern): https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/rad/
+- Startseite (fertiger Prototyp): https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/startseite/
 - Rad als Instrument, SVG oder 3D: https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/vergleich/
 - Runde 1 (vier Richtungen): https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/runde-1/
 
