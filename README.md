@@ -2,6 +2,8 @@
 
 Entwurfsseite mit vier Design-Richtungen für die neue Startseite von Fares Chahrour (Vertriebszirkel / Sales Performance).
 
-Ansehen: https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/
+Ansehen:
+- Runde 2 (Rad als Kern): https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/rad/
+- Runde 1 (vier Richtungen): https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/runde-1/
 
 Fotos sind Platzhalter; Bildrechte noch nicht freigegeben. Nicht zur Weiterverwendung.
