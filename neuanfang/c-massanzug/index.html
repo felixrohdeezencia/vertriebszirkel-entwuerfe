@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fares Chahrour · Vertriebszirkel</title>
+<meta name="description" content="Vertrieb nach Maß: Fares Chahrour trainiert Verkäufer und Teams am Telefon. Im Vertrieb seit 1999.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tuch:#1A2A4C; --tuch-tief:#121E38; --tuch-hell:#24375F;
+  --kreide:#F1EEE6; --kreide-dim:#B9C2D6;
+  --futter:#A9864F; --futter-hell:#CDAE74; --futter-tief:#7E6236;
+  --gutter:clamp(16px,4vw,56px);
+  --display:"Libre Caslon Display",Georgia,serif; --text:"Libre Caslon Text",Georgia,serif; --sans:Manrope,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--tuch);-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:clamp(17px,1.08vw,19px);line-height:1.6;color:var(--kreide);
+  background-color:var(--tuch);
+  background-image:
+    repeating-linear-gradient(90deg,rgba(241,238,230,.07) 0 1px,transparent 1px 46px),
+    repeating-linear-gradient(45deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px),
+    repeating-linear-gradient(-45deg,rgba(0,0,0,.08) 0 1px,transparent 1px 3px);}
+::selection{background:var(--futter-hell);color:var(--tuch-tief)}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+:focus-visible{outline:2px dashed var(--kreide);outline-offset:4px}
+img,svg{display:block;max-width:100%}
+.wrap{padding-inline:var(--gutter);max-width:1440px;margin-inline:auto}
+.heft{border-top:2px dashed rgba(241,238,230,.45)}
+
+.kopf{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:20px}
+.etikett{display:inline-flex;align-items:center;gap:10px;background:var(--tuch-tief);border:1px solid var(--futter);padding:8px 14px;text-decoration:none;font-family:var(--display);font-size:20px;letter-spacing:.04em;box-shadow:inset 0 0 0 3px var(--tuch-tief),inset 0 0 0 4px rgba(205,174,116,.45)}
+.etikett i{font-family:var(--text);font-style:italic;color:var(--futter-hell)}
+.kopf nav{display:flex;gap:28px;font-size:15px;color:var(--kreide-dim)}
+.kopf nav a{text-decoration:none}.kopf nav a:hover{color:var(--kreide)}
+.lnk{font-weight:600;font-size:15px;text-decoration:none;color:var(--futter-hell);padding-block:12px;border-bottom:1px dashed var(--futter-hell)}
+
+/* Erster Bildschirm: die Anprobe */
+.anprobe{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,72px);align-items:center;padding-block:clamp(24px,4vw,56px) clamp(64px,8vw,120px)}
+.anprobe h1{font-family:var(--display);font-weight:400;font-size:clamp(64px,8.6vw,150px);line-height:.9;letter-spacing:-.015em}
+.anprobe h1 i{font-family:var(--text);font-style:italic;color:var(--futter-hell);font-size:.82em}
+.anprobe .lede{margin-top:28px;max-width:46ch;color:var(--kreide-dim);font-size:clamp(18px,1.3vw,21px)}
+.anprobe .lede b{color:var(--kreide);font-weight:600}
+.cta{display:inline-flex;align-items:center;gap:14px;margin-top:32px;background:var(--kreide);color:var(--tuch-tief);text-decoration:none;font-weight:700;font-size:16px;padding:17px 26px;min-height:56px;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.cta span{font-family:var(--text);font-style:italic;font-weight:400;color:var(--futter-tief)}
+.cta:hover{transform:translateY(-2px)}
+.klein{font-size:13.5px;color:var(--kreide-dim);margin-top:12px}
+.buste{position:relative}
+.buste img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 16%;filter:saturate(.85) contrast(1.05)}
+.buste svg.kreide{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.kreide path,.kreide line{fill:none;stroke:var(--kreide);stroke-width:2;stroke-linecap:round;stroke-dasharray:var(--len,600);stroke-dashoffset:var(--len,600);animation:zeichnen 1.4s cubic-bezier(.3,.7,.2,1) forwards}
+.kreide .l2{animation-delay:.35s}.kreide .l3{animation-delay:.7s}
+@keyframes zeichnen{to{stroke-dashoffset:0}}
+.notiz{position:absolute;font-family:var(--text);font-style:italic;font-size:clamp(15px,1.25vw,19px);color:var(--kreide);line-height:1.2;white-space:nowrap;text-shadow:0 1px 8px rgba(18,30,56,.9)}
+.notiz b{display:block;font-family:var(--sans);font-style:normal;font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--futter-hell)}
+.n1{left:-4%;top:8%;transform:translateX(-100%)}
+.n2{right:4%;top:30%;text-align:right}
+.n3{left:-4%;bottom:10%;transform:translateX(-100%)}
+.webetikett{position:absolute;right:16px;bottom:16px;background:var(--tuch-tief);border:1px solid var(--futter);padding:10px 14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--futter-hell);text-align:center;line-height:1.5}
+.webetikett b{display:block;font-family:var(--display);font-size:20px;letter-spacing:.02em;text-transform:none;color:var(--kreide);font-weight:400}
+
+section{padding-block:clamp(64px,9vw,140px)}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(44px,5.6vw,92px);line-height:.98;letter-spacing:-.01em;max-width:15ch;text-wrap:balance}
+h2 i{font-family:var(--text);font-style:italic;color:var(--futter-hell);font-size:.84em}
+.intro{max-width:56ch;color:var(--kreide-dim);margin-top:20px}
+
+/* Maßband der fünf V */
+.mass{margin-top:56px;position:relative}
+.band{position:relative;height:84px;background:var(--futter-hell);color:var(--tuch-tief);overflow:hidden;
+  background-image:repeating-linear-gradient(90deg,var(--tuch-tief) 0 1px,transparent 1px 10px),repeating-linear-gradient(90deg,var(--tuch-tief) 0 2px,transparent 2px 50px);
+  background-size:100% 16px,100% 30px;background-repeat:no-repeat;background-position:0 0,0 0}
+.band .z{position:absolute;top:32px;font-family:var(--sans);font-weight:700;font-size:13px;transform:translateX(-50%)}
+.marken{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:0}
+.marke{position:relative;padding:34px 20px 0 0;border-left:2px dashed rgba(241,238,230,.5)}
+.marke::before{content:"";position:absolute;left:-7px;top:-6px;width:12px;height:12px;background:var(--kreide);transform:rotate(45deg)}
+.marke .v{font-family:var(--display);font-size:clamp(34px,3vw,48px);line-height:1;padding-left:18px}
+.marke .v i{font-family:var(--text);color:var(--futter-hell)}
+.marke p{padding-left:18px;margin-top:12px;font-size:15.5px;line-height:1.5}
+.marke .lern{color:var(--kreide-dim);font-family:var(--text);font-style:italic;margin-top:10px}
+.abc{display:flex;flex-wrap:wrap;gap:12px 44px;margin-top:48px}
+.abc span{font-family:var(--text);font-style:italic;color:var(--kreide-dim)}
+.abc b{font-family:var(--display);font-style:normal;font-size:30px;color:var(--kreide);margin-right:8px;font-weight:400}
+
+/* Futter: Finanzvertrieb */
+.futter{background:var(--futter);color:var(--tuch-tief);
+  background-image:linear-gradient(115deg,rgba(255,255,255,.14),transparent 35%,rgba(0,0,0,.12) 70%,rgba(255,255,255,.08));}
+.futter .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:start}
+.futter h2 i{color:var(--tuch-tief)}
+.futter .zahl{font-family:var(--display);font-size:clamp(140px,18vw,280px);line-height:.8}
+.futter .zahl small{display:block;font-family:var(--sans);font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-top:18px;line-height:1.5}
+.futter p+p{margin-top:18px}
+.naht{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:36px;padding:20px 0;border-top:2px dashed var(--tuch-tief);border-bottom:2px dashed var(--tuch-tief);text-decoration:none}
+.naht b{font-family:var(--display);font-size:28px;font-weight:400}
+.naht span{font-size:13px;font-weight:600}
+
+/* Laufbahn als Stichliste */
+.stiche{list-style:none;margin-top:48px}
+.stiche li{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 0;border-top:2px dashed rgba(241,238,230,.3)}
+.stiche .j{font-family:var(--display);font-size:32px;line-height:1;color:var(--futter-hell)}
+.stiche b{font-weight:600}
+.stiche small{display:block;color:var(--kreide-dim);font-size:15px}
+.freigabe{background:none;color:inherit;border-bottom:2px dotted #F2C4C4}
+.freigabe::after{content:"Freigabe Fares";font:700 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:#F2C4C4;color:#5C0B0B;padding:3px 5px;margin-left:6px;vertical-align:middle}
+
+.wege{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:48px;border-left:2px dashed rgba(241,238,230,.3)}
+.weg{padding:8px 28px 12px;border-right:2px dashed rgba(241,238,230,.3);text-decoration:none;display:flex;flex-direction:column;gap:14px}
+.weg h3{font-family:var(--display);font-weight:400;font-size:clamp(28px,2.4vw,38px);line-height:1.05}
+.weg p{color:var(--kreide-dim);font-size:16px}
+.weg .pf{margin-top:auto;font-weight:600;font-size:15px;color:var(--futter-hell)}
+.weg:hover h3{color:var(--futter-hell)}
+
+.zitat blockquote{font-family:var(--text);font-style:italic;font-size:clamp(36px,4.8vw,78px);line-height:1.1;max-width:20ch;text-wrap:balance}
+.zitat p{margin-top:28px;max-width:60ch;color:var(--kreide-dim)}
+
+.schluss{background:var(--tuch-tief)}
+footer{padding-block:44px;font-size:15px;color:var(--kreide-dim)}
+footer .z{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 24px}
+footer .claim{font-family:var(--text);font-style:italic;font-size:20px;color:var(--kreide)}
+
+@media (max-width:980px){
+  .kopf nav{display:none}
+  .etikett{font-size:16px;white-space:nowrap}
+  .anprobe{grid-template-columns:1fr}
+  .notiz{display:none}
+  .futter .wrap{grid-template-columns:1fr}
+  .marken{grid-template-columns:1fr;border-left:0}
+  .marke{border-left:0;border-top:2px dashed rgba(241,238,230,.4);padding:26px 0 18px}
+  .marke::before{left:0;top:-7px}
+  .marke .v,.marke p{padding-left:0}
+  .band .z:nth-child(even){display:none}
+  .wege{grid-template-columns:1fr;border-left:0}
+  .weg{border-right:0;border-top:2px dashed rgba(241,238,230,.3);padding:24px 0}
+  .stiche li{grid-template-columns:96px 1fr;gap:14px}
+  .stiche .j{font-size:24px}
+}
+@media (prefers-reduced-motion:reduce){.kreide path,.kreide line{animation:none;stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<header class="wrap kopf">
+  <a class="etikett" href="#">Fares Chahrour <i>&amp;</i> Vertrieb</a>
+  <nav aria-label="Hauptnavigation"><a href="#mass">Am Telefon</a><a href="#futter">Finanzvertrieb</a><a href="#laufbahn">Laufbahn</a><a href="#wege">Zusammenarbeit</a></nav>
+  <a class="lnk" href="https://calendly.com/fareschahrour/vertriebs-klarheitsgespraech?utm_source=website&utm_medium=referral&utm_campaign=erstgespraech">Erstgespräch</a>
+</header>
+
+<main>
+<div class="wrap anprobe">
+  <div>
+    <h1>Vertrieb <i>nach</i> Maß.</h1>
+    <p class="lede">Ich bin Fares Chahrour, seit 1999 im Vertrieb und bis heute selbst am Telefon. <b>Ich nehme Maß an Ihrem echten Gespräch</b> und trainiere genau das, was bei Ihnen fehlt. Kein Seminar von der Stange.</p>
+    <a class="cta" href="https://calendly.com/fareschahrour/vertriebs-klarheitsgespraech?utm_source=website&utm_medium=referral&utm_campaign=erstgespraech">Maß nehmen: Erstgespräch <span>30 Min.</span></a>
+    <p class="klein">Kostenlos, über Calendly (<a href="#">Datenschutz</a>).</p>
+  </div>
+  <figure class="buste">
+    <img src="../assets/fares-gespraech.jpg" alt="Fares Chahrour im dunkelblauen Anzug, erklärt mit beiden Händen" width="900" height="1454">
+    <svg class="kreide" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
+      <path style="--len:260" d="M190 70 C 120 60, 60 70, -10 70"/>
+      <path class="l2" style="--len:200" d="M300 205 C 330 190, 360 180, 385 170"/>
+      <path class="l3" style="--len:300" d="M175 430 C 110 440, 40 440, -10 440"/>
+    </svg>
+    <p class="notiz n1"><b>Erfahrung</b>27 Jahre im Vertrieb</p>
+    <p class="notiz n2"><b>Werkzeug</b>das Telefon, jeden Tag</p>
+    <p class="notiz n3"><b>Herkunft</b>Finanz- und Vermögensvertrieb</p>
+    <figcaption class="webetikett">Maßarbeit<b>seit 1999</b></figcaption>
+  </figure>
+</div>
+
+<section id="mass" class="heft">
+  <div class="wrap">
+    <h2>Fünf Maße <i>für</i> ein gutes Telefonat.</h2>
+    <p class="intro">Gute Gespräche entstehen nicht aus auswendig gelernten Sätzen. Sie entstehen aus Vorbereitung, echtem Interesse, den richtigen Fragen und klaren Vereinbarungen. Das sind die fünf V, mit denen ich arbeite.</p>
+    <div class="mass">
+      <div class="band" aria-hidden="true"><span class="z" style="left:10%">10</span><span class="z" style="left:30%">30</span><span class="z" style="left:50%">50</span><span class="z" style="left:70%">70</span><span class="z" style="left:90%">90</span></div>
+      <div class="marken">
+        <div class="marke"><p class="v"><i>V</i>orbereiten</p><p>Zielkunde, Anlass, Gesprächsziel und Haltung klären.</p><p class="lern">Mit einer relevanten Frage beginnen.</p></div>
+        <div class="marke"><p class="v"><i>V</i>erstehen</p><p>Aktiv zuhören und das ABC anwenden.</p><p class="lern">Erst verstehen, dann zeigen.</p></div>
+        <div class="marke"><p class="v"><i>V</i>erbinden</p><p>Bestätigten Bedarf mit echtem Nutzen verbinden.</p><p class="lern">Individuell statt pauschal.</p></div>
+        <div class="marke"><p class="v"><i>V</i>ereinbaren</p><p>Den passenden nächsten Schritt klären.</p><p class="lern">Wer tut was, bis wann, wozu.</p></div>
+        <div class="marke"><p class="v"><i>V</i>erbessern</p><p>Reflektieren und einmal gezielt wiederholen.</p><p class="lern">Eine Verbesserung im Alltag.</p></div>
+      </div>
+    </div>
+    <div class="abc"><span><b>A</b>Ausgangslage</span><span><b>B</b>Zielbild</span><span><b>C</b>Hindernisse</span></div>
+  </div>
+</section>
+
+<section class="futter" id="futter">
+  <div class="wrap">
+    <p class="zahl">19<small>Jahre in der Vermögensberatung,<br>2000 bis 2019</small></p>
+    <div>
+      <h2>Das Futter <i>unter dem</i> Anzug.</h2>
+      <p class="intro" style="color:var(--tuch-tief)">Als Geschäftsstellenleiter bei der Deutschen Vermögensberatung habe ich eine eigene Vertriebsstruktur aufgebaut und jeden Berater selbst ausgebildet. Dort habe ich gelernt, was ein einziges Telefonat entscheidet.</p>
+      <p>In genau diesem Feld startet Vertriebscoach im Ohr seinen ersten Piloten: neunzig Tage Telefontraining mit einem digitalen Coach. Ich begleite ihn als Praxis-Coach.</p>
+      <a class="naht" href="https://coachimohr.com/vertrieb/?utm_source=vertriebs-zirkel&utm_medium=referral&utm_campaign=website"><b>Vertriebscoach im Ohr</b><span>Externe Website →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="laufbahn">
+  <div class="wrap">
+    <h2>Gelernt <i>am</i> Kunden.</h2>
+    <ol class="stiche">
+      <li><span class="j">Start</span><span><b>Technische Ausbildung bei Procter &amp; Gamble</b><small>Industriemechaniker, dann der Wechsel in den Vertrieb.</small></span></li>
+      <li><span class="j">1999</span><span><b>Erster Tag im Vertrieb</b><small>Kunden beraten, selbst verkaufen.</small></span></li>
+      <li><span class="j">2000–19</span><span><b>Geschäftsstellenleiter, Deutsche Vermögensberatung</b><small>Eigene Struktur aufgebaut, jeden Berater selbst ausgebildet. Ausbildereignung nach AEVO.</small></span></li>
+      <li><span class="j">Heute</span><span><b>Jeden Tag selbst in der B2B-Akquise</b><small><mark class="freigabe">80 bis 110 Anrufe am Tag</mark></small></span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="wege" class="heft">
+  <div class="wrap">
+    <h2>Drei Schnitte, <i>kein</i> Katalog.</h2>
+    <p class="intro">Welcher Einstieg passt, klären wir im Erstgespräch.</p>
+    <div class="wege">
+      <a class="weg" href="#"><h3>VertriebsPerformance Check</h3><p>Für Geschäftsführung und Vertriebsleitung: Engpässe finden, Maßnahmen priorisieren.</p><span class="pf">Ansehen →</span></a>
+      <a class="weg" href="#"><h3>Vertriebsrad</h3><p>Für Verkäufer und Selbstständige: acht persönliche Bereiche, ein Schwerpunkt.</p><span class="pf">Ansehen →</span></a>
+      <a class="weg" href="#"><h3>PraxisPerformance 90</h3><p>Für Verkäufer und Teams: neunzig Tage Training an echten Gesprächen.</p><span class="pf">Ansehen →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="zitat heft">
+  <div class="wrap">
+    <blockquote>„Klarheit verkauft stärker als Druck.“</blockquote>
+    <p>„Ein Verkäufer braucht nicht immer jemanden, der ihm sagt, was er besser machen muss. Manchmal braucht er einfach jemanden, der ihm hilft, es selbst zu erkennen.“ Fares Chahrour</p>
+  </div>
+</section>
+
+<section class="schluss">
+  <div class="wrap">
+    <h2>Die erste Anprobe <i>dauert</i> 30 Minuten.</h2>
+    <p class="intro">Kostenlos. Wir klären, wie Sie heute verkaufen, was Sie verändern möchten und woran es bisher scheitert. Ich rede Ihnen kein Problem ein.</p>
+    <a class="cta" href="https://calendly.com/fareschahrour/vertriebs-klarheitsgespraech?utm_source=website&utm_medium=referral&utm_campaign=erstgespraech">Erstgespräch vereinbaren <span>30 Min.</span></a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap heft">
+  <div class="z" style="padding-top:28px">
+    <p class="claim">Klarheit im Kopf. Struktur im Gespräch. Ergebnis im Vertrieb.</p>
+    <ul><li><a href="mailto:fc@vertriebs-zirkel.de">fc@vertriebs-zirkel.de</a></li><li><a href="https://www.instagram.com/fares_chahrour2711/">Instagram</a></li><li><a href="https://coachimohr.com/vertrieb/?utm_source=vertriebs-zirkel&utm_medium=referral&utm_campaign=website">Vertriebscoach im Ohr</a></li><li><a href="#">Impressum</a></li><li><a href="#">Datenschutz</a></li></ul>
+  </div>
+  <p style="margin-top:20px">Website: <a href="https://felixrohde.com/?utm_source=vertriebs-zirkel&utm_medium=referral">Ezencia · Felix Rohde</a></p>
+</footer>
+</body>
+</html>

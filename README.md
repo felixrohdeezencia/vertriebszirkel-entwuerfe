@@ -3,6 +3,7 @@
 Entwurfsseite mit vier Design-Richtungen für die neue Startseite von Fares Chahrour (Vertriebszirkel / Sales Performance).
 
 Ansehen:
+- Neuanfang, vier Richtungen (21.11.): neuanfang/ (Branch neuanfang/vier-richtungen)
 - Runde 2 (Rad als Kern): https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/rad/
 - Startseite (fertiger Prototyp): https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/startseite/
 - Rad als Instrument, SVG oder 3D: https://felixrohdeezencia.github.io/vertriebszirkel-entwuerfe/vergleich/
