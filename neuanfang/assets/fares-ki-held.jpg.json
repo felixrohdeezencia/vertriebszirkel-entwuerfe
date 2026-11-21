@@ -1,0 +1,38 @@
+{
+  "created": "2026-11-21T19:49:19.172Z",
+  "model": "gemini-3-pro-image",
+  "inputs": [
+    "input/01-FaresPortrait.jpg",
+    "input/03-sessel-gestik.jpg"
+  ],
+  "person": "he",
+  "change": "Editorial portrait for a sales trainer's website. The man is in his mid-forties with short grey hair, a short trimmed grey-and-brown beard and light eyes, exactly as in the first image. He stands three-quarter to camera against a seamless deep ultramarine-blue studio backdrop (colour close to #1431C4), holding a black desk-phone handset to his ear with his left hand, mid-sentence, attentive and calm, a slight confident smile with closed lips. Dark navy suit, white shirt, navy tie, no pocket square. Crisp, direct key light from the left with a clean shadow side, subtle rim light, high-end magazine quality, sharp focus on the eyes, 85mm lens look, framed from the head to the waist. Keep the top fifth of the frame calm and empty blue. No props besides the handset.",
+  "aspectRatio": "4:5",
+  "imageSize": "2K",
+  "usage": {
+    "promptTokenCount": 808,
+    "candidatesTokenCount": 1346,
+    "totalTokenCount": 2361,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 292
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 516
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1120
+      }
+    ],
+    "thoughtsTokenCount": 207,
+    "serviceTier": "standard"
+  },
+  "aiGenerated": true,
+  "approvedByFelix": false,
+  "approvedByClient": false
+}
