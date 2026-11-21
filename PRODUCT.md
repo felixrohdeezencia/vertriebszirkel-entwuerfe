@@ -44,6 +44,8 @@ Success: a sales lead books the first call already believing that Fares has done
 
 ## Brand Commitments
 
+- Visual direction chosen by Fares and Felix on 21.11.2026: **A · Anzeigetafel** (signal blue, split-flap board; `neuanfang/a-anzeigetafel/`).
+
 - Name: Fares Chahrour, always with h.
 - Brand line from the current site: "Klarheit im Kopf. Struktur im Gespräch. Ergebnis im Vertrieb."
 - Company logo (not the personal mark): Chahrour & Warth Unternehmensentwicklung UG, version 1 "Klassik, geschärft", chosen 13.11.2026: Cormorant Garamond 600 caps, italic gold ampersand, Manrope subline; ink #0F1B2D, gold #A9864F, light gold #CDAE74. Files: `ezencia_posting/Foto/chahrour-warth-logo/`. A circular FC monogram in the same ink and gold is used on the current drafts.
@@ -61,7 +63,9 @@ Confirmed and publishable:
 - Praxis-Coach at Vertriebscoach im Ohr; Coach im Ohr runs its first pilot in financial sales (publishable without names, decision 21.11.).
 - Fares' own sentences (WhatsApp 17.11., current site): "Klarheit verkauft stärker als Druck." / "Ein Verkäufer braucht nicht immer jemanden, der ihm sagt, was er besser machen muss. Manchmal braucht er einfach jemanden, der ihm hilft, es selbst zu erkennen."
 
-Said by Fares in meetings, **need his go before publishing**: 80–110 calls a day (20.10.); number one of 600 salespeople within two months in a later sales job (20.10.); revenue tripled from 120k to 360k (20.10.).
+Approved by Fares on WhatsApp, 21.11.2026: **80–110 calls a day**, and the framing **"seit 1999"** (27 years) over "25 Jahre".
+
+Said by Fares in meetings, **need his go before publishing**: number one of 600 salespeople within two months in a later sales job (20.10.); revenue tripled from 120k to 360k (20.10.).
 
 Photos: `ezencia_posting/Foto/fares-chahrour/input/` (portrait cutout, two armchair shots in a navy suit, childhood photo). Usage rights for the web not yet confirmed in writing. A new suit shoot was planned for 19.11.
 
