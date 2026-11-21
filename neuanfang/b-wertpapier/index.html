@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fares Chahrour · Vertriebszirkel</title>
+<meta name="description" content="Fares Chahrour, Vertriebspraxis seit 1999. Training für Vertrieb und Gesprächsführung am Telefon.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinte:#0F1B2D; --tinte-2:#16263E; --tinte-3:#1E3150;
+  --gold:#A9864F; --gold-hell:#CDAE74;
+  --papier:#E4E8EC; --papier-2:#D3D9E0;   /* Sicherheitspapier, blaugrau */
+  --text-hell:#E9ECF1; --text-dim:#A9B4C6;
+  --gutter:clamp(16px,4vw,56px);
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:Manrope,system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--tinte);-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:clamp(17px,1.08vw,19px);line-height:1.6;color:var(--text-hell);background:var(--tinte)}
+::selection{background:var(--gold-hell);color:var(--tinte)}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--gold-hell);outline-offset:3px}
+img,svg{display:block;max-width:100%}
+.wrap{padding-inline:var(--gutter);max-width:1440px;margin-inline:auto}
+.caps{font-family:var(--sans);font-weight:600;text-transform:uppercase;letter-spacing:.28em;font-size:12px}
+.amp{font-family:var(--serif);font-style:italic;color:var(--gold-hell);font-weight:500}
+
+.kopf{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:22px}
+.marke{display:flex;align-items:center;gap:14px;text-decoration:none}
+.marke img{width:44px;height:44px}
+.marke b{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.08em;text-transform:uppercase}
+.kopf nav{display:flex;gap:28px;font-size:15px;color:var(--text-dim)}
+.kopf nav a{text-decoration:none}.kopf nav a:hover{color:var(--text-hell)}
+.lnk{font-size:15px;font-weight:600;color:var(--gold-hell);text-decoration:none;border-bottom:1px solid var(--gold);padding-block:10px}
+
+/* Die Urkunde */
+.urkunde{position:relative;margin-block:clamp(8px,2vw,24px) clamp(56px,8vw,120px);background:var(--papier);color:var(--tinte);padding:clamp(14px,1.6vw,22px)}
+.urkunde::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(15,27,45,.035) 0 1px,transparent 1px 5px),repeating-linear-gradient(25deg,rgba(169,134,79,.05) 0 1px,transparent 1px 7px);pointer-events:none}
+.rahmen{position:relative;border:1px solid var(--tinte);padding:clamp(10px,1.2vw,16px)}
+.band{height:clamp(14px,1.4vw,20px);background-image:var(--band);background-size:auto 100%;background-repeat:repeat-x}
+.feld{border:1px solid var(--tinte);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr) minmax(0,1fr);gap:clamp(20px,3vw,48px);align-items:center;padding:clamp(24px,4vw,64px) clamp(20px,3.5vw,56px)}
+.medaillon{aspect-ratio:3/4;border-radius:50%;overflow:hidden;border:1px solid var(--tinte);outline:6px solid var(--papier);box-shadow:0 0 0 7px var(--gold)}
+.medaillon img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:grayscale(1) sepia(.35) hue-rotate(185deg) saturate(1.6) contrast(1.1)}
+.mitte{text-align:center}
+.mitte .caps{color:#5B6475}
+.mitte h1{font-family:var(--serif);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(40px,4.7vw,84px);line-height:.95;margin:18px 0 6px}
+.mitte h1 .z2{display:block}
+.trenn{width:64px;height:1px;background:var(--gold);margin:22px auto}
+.mitte .satz{font-family:var(--serif);font-size:clamp(22px,2vw,30px);line-height:1.25;font-weight:500}
+.mitte .satz em{color:var(--gold);}
+.einloesen{display:inline-flex;align-items:center;gap:12px;margin-top:28px;background:var(--tinte);color:var(--text-hell);text-decoration:none;padding:16px 26px;font-weight:600;font-size:16px;letter-spacing:.02em;min-height:54px;transition:background .3s}
+.einloesen:hover{background:var(--tinte-3)}
+.einloesen span{color:var(--gold-hell)}
+.mitte .klein{font-size:13px;color:#5B6475;margin-top:12px}
+.rosette{position:relative;aspect-ratio:1}
+.rosette svg{width:100%;height:100%}
+.rosette .zentrum{position:absolute;inset:34%;border-radius:50%;background:var(--papier);box-shadow:0 0 0 1px var(--gold);display:grid;place-items:center;text-align:center;font-family:var(--serif);font-weight:600;line-height:.9;font-size:clamp(34px,3.4vw,58px);color:var(--tinte)}
+.rosette .zentrum small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;margin-top:8px}
+.fuss{display:flex;justify-content:space-between;gap:16px;padding:12px 4px 2px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:#5B6475}
+.mikro{font-size:6.5px;letter-spacing:.12em;white-space:nowrap;overflow:hidden;color:rgba(15,27,45,.55);padding:4px 0 0}
+
+section{padding-block:clamp(64px,9vw,140px)}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5vw,80px);line-height:1;letter-spacing:.01em;text-wrap:balance;max-width:16ch}
+h2 em{font-style:italic;font-weight:500;color:var(--gold-hell)}
+.intro{max-width:56ch;color:var(--text-dim);margin-top:20px}
+
+/* Jahresringe */
+.ringe{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.ringe .gross svg{width:100%;height:auto}
+.chronik{list-style:none;margin-top:36px;border-top:1px solid rgba(205,174,116,.35)}
+.chronik li{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid rgba(205,174,116,.2);cursor:default}
+.chronik .j{font-family:var(--serif);font-weight:600;font-size:28px;color:var(--gold-hell);line-height:1.1}
+.chronik b{font-weight:600}
+.chronik small{display:block;color:var(--text-dim);font-size:15px}
+.chronik li:hover .j,.chronik li.an .j{color:var(--text-hell)}
+.freigabe{background:none;color:inherit;border-bottom:2px dotted #F2C4C4}
+.freigabe::after{content:"Freigabe Fares";font:700 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:#F2C4C4;color:#5C0B0B;padding:3px 5px;margin-left:6px;vertical-align:middle}
+
+/* Kupons der fünf V */
+.kupons{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:48px;background:var(--papier);color:var(--tinte)}
+.kupon{position:relative;padding:28px 22px 26px;border-right:2px dashed rgba(15,27,45,.35);min-height:300px;display:flex;flex-direction:column}
+.kupon:last-child{border-right:0}
+.kupon::before,.kupon::after{content:"";position:absolute;right:-11px;width:20px;height:20px;border-radius:50%;background:var(--tinte);z-index:1}
+.kupon::before{top:-10px}.kupon::after{bottom:-10px}
+.kupon:last-child::before,.kupon:last-child::after{display:none}
+.kupon .nr{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:#5B6475}
+.kupon h3{font-family:var(--serif);font-weight:600;font-size:clamp(28px,2.4vw,38px);line-height:1;margin:14px 0 14px}
+.kupon h3 span{color:var(--gold)}
+.kupon p{font-size:15.5px;line-height:1.5}
+.kupon .lern{margin-top:auto;padding-top:16px;border-top:1px solid rgba(15,27,45,.2);font-size:14.5px;color:#3E4757}
+.abc{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:28px;color:var(--text-dim)}
+.abc b{font-family:var(--serif);font-size:30px;color:var(--gold-hell);margin-right:8px;font-weight:600}
+
+/* Finanzvertrieb */
+.finanz{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px)}
+.finanz .gross{font-family:var(--serif);font-weight:600;font-size:clamp(120px,15vw,240px);line-height:.85;color:var(--gold-hell)}
+.finanz .gross small{display:block;font-family:var(--sans);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--text-dim);margin-top:18px;font-weight:600;line-height:1.5}
+.finanz p+p{margin-top:18px}
+.bruecke{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:36px;padding:22px 0;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);text-decoration:none}
+.bruecke b{font-family:var(--serif);font-size:28px;font-weight:600}
+.bruecke span{font-size:13px;color:var(--text-dim)}
+.bruecke:hover b{color:var(--gold-hell)}
+
+.wege{margin-top:48px;border-top:1px solid rgba(205,174,116,.35)}
+.weg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:24px;align-items:baseline;padding:28px 0;border-bottom:1px solid rgba(205,174,116,.2);text-decoration:none}
+.weg h3{font-family:var(--serif);font-weight:600;font-size:clamp(28px,2.6vw,40px);line-height:1.05}
+.weg p{color:var(--text-dim);font-size:16px}
+.weg .pf{color:var(--gold-hell);font-weight:600;font-size:15px;white-space:nowrap}
+.weg:hover h3{color:var(--gold-hell)}
+
+.zitat{background:var(--tinte-2)}
+.zitat blockquote{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(40px,5.6vw,92px);line-height:1.02;max-width:18ch;text-wrap:balance}
+.zitat blockquote .amp{font-style:italic}
+.zitat p{margin-top:28px;max-width:60ch;color:var(--text-dim);font-size:clamp(18px,1.4vw,21px)}
+
+.schluss{text-align:center}
+.schluss h2{margin-inline:auto}
+.schluss .intro{margin-inline:auto}
+.schluss .einloesen{background:var(--gold-hell);color:var(--tinte)}
+.schluss .einloesen span{color:var(--tinte)}
+.schluss .einloesen:hover{background:var(--text-hell)}
+
+footer{border-top:1px solid rgba(205,174,116,.3);padding-block:44px;font-size:15px;color:var(--text-dim)}
+footer .z{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 24px}
+footer .claim{font-family:var(--serif);font-size:22px;color:var(--text-hell)}
+
+@media (max-width:980px){
+  .kopf nav{display:none}
+  .feld{grid-template-columns:1fr 1fr}
+  .mitte{grid-column:1/-1;order:-1}
+  .ringe,.finanz{grid-template-columns:1fr}
+  .kupons{grid-template-columns:1fr}
+  .kupon{border-right:0;border-bottom:2px dashed rgba(15,27,45,.35);min-height:0}
+  .kupon::before,.kupon::after{display:none}
+  .weg{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .einloesen{white-space:nowrap;font-size:15px;padding:14px 18px}
+  .marke b{font-size:18px;white-space:nowrap}
+  .feld{padding:22px 14px;gap:18px}
+  .mitte h1{letter-spacing:.03em}
+  .fuss span:nth-child(2){display:none}
+  .chronik li{grid-template-columns:76px 1fr;gap:12px}
+  .chronik .j{font-size:22px}
+}
+</style>
+</head>
+<body>
+<header class="wrap kopf">
+  <a class="marke" href="#"><img src="../assets/fc-monogramm.png" alt="" width="44" height="44"><b>Fares Chahrour</b></a>
+  <nav aria-label="Hauptnavigation"><a href="#ringe">Laufbahn</a><a href="#kupons">Am Telefon</a><a href="#finanz">Finanzvertrieb</a><a href="#wege">Zusammenarbeit</a></nav>
+  <a class="lnk" href="https://calendly.com/fareschahrour/vertriebs-klarheitsgespraech?utm_source=website&utm_medium=referral&utm_campaign=erstgespraech">Erstgespräch</a>
+</header>
+
+<main>
+<div class="wrap">
+  <article class="urkunde" aria-labelledby="h1">
+    <div class="rahmen">
+      <div class="band" aria-hidden="true"></div>
+      <div class="feld">
+        <div class="medaillon"><img src="../assets/fares-gespraech.jpg" alt="Fares Chahrour im Anzug, im Gespräch" width="900" height="1454"></div>
+        <div class="mitte">
+          <p class="caps">Vertriebszirkel · Sales Performance</p>
+          <h1 id="h1"><span>Fares</span> <span class="z2">Chahrour</span></h1>
+          <div class="trenn"></div>
+          <p class="satz">Vertriebspraxis seit 1999. <em>Und jeden Morgen</em> noch selbst am Telefon.</p>
+          <a class="einloesen" href="https://calendly.com/fareschahrour/vertriebs-klarheitsgespraech?utm_source=website&utm_medium=referral&utm_campaign=erstgespraech">Erstgespräch vereinbaren <span>30 Min.</span></a>
+          <p class="klein">Kostenlos, über Calendly (<a href="#">Datenschutz</a>).</p>
+        </div>
+        <div class="rosette" aria-hidden="true"><svg id="ros" viewBox="-100 -100 200 200"></svg><div class="zentrum"><div>27<small>Jahre</small></div></div></div>
+      </div>
+      <div class="band" aria-hidden="true"></div>
+      <div class="fuss"><span>Nr. 1999 – 2026</span><span>Klarheit im Kopf · Struktur im Gespräch · Ergebnis im Vertrieb</span><span>Ausgabe Deutschland</span></div>
+      <p class="mikro" aria-hidden="true" id="mikro"></p>
+    </div>
+  </article>
+</div>
+
+<section id="ringe">
+  <div class="wrap ringe">
+    <div class="gross" aria-hidden="true"><svg id="ros2" viewBox="-100 -100 200 200"></svg></div>
+    <div>
+      <h2>27 Ringe. <em>Jeder ein Jahr</em> im Vertrieb.</h2>
+      <p class="intro">Die goldenen Ringe sind die neunzehn Jahre in der Vermögensberatung. Fahren Sie über eine Station, und das Jahr leuchtet.</p>
+      <ol class="chronik">
+        <li data-von="1999" data-bis="1999"><span class="j">1999</span><span><b>Wechsel in den Vertrieb</b><small>Nach der technischen Ausbildung zum Industriemechaniker bei Procter &amp; Gamble.</small></span></li>
+        <li data-von="2000" data-bis="2019"><span class="j">2000–19</span><span><b>Geschäftsstellenleiter, Deutsche Vermögensberatung</b><small>Eigene Vertriebsstruktur aufgebaut, jeden Berater selbst ausgebildet. Ausbildereignung nach AEVO.</small></span></li>
+        <li data-von="2020" data-bis="2026"><span class="j">Heute</span><span><b>Selbst in der B2B-Akquise, jeden Tag</b><small><mark class="freigabe">80 bis 110 Anrufe am Tag</mark></small></span></li>
+        <li data-von="2026" data-bis="2026"><span class="j">2026</span><span><b>Praxis-Coach bei Vertriebscoach im Ohr</b><small>Begleitet den ersten Piloten im Finanzvertrieb.</small></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="kupons" style="background:var(--tinte-2)">
+  <div class="wrap">
+    <h2>Fünf Kupons. <em>Ein gutes Telefonat.</em></h2>
+    <p class="intro">Gute Gespräche entstehen nicht aus auswendig gelernten Sätzen. Sie entstehen aus Vorbereitung, echtem Interesse, den richtigen Fragen und klaren Vereinbarungen. So arbeite ich: die fünf V.</p>
+    <div class="kupons">
+      <div class="kupon"><span class="nr">Kupon 1</span><h3><span>V</span>orbereiten</h3><p>Zielkunde, Anlass, Gesprächsziel und Gesprächshaltung klären.</p><p class="lern">Mit einer guten, relevanten Frage beginnen.</p></div>
+      <div class="kupon"><span class="nr">Kupon 2</span><h3><span>V</span>erstehen</h3><p>Aktiv zuhören und das ABC anwenden.</p><p class="lern">Ausgangslage, Zielbild, Hindernisse.</p></div>
+      <div class="kupon"><span class="nr">Kupon 3</span><h3><span>V</span>erbinden</h3><p>Bestätigten Bedarf mit tatsächlichem Nutzen verbinden.</p><p class="lern">Individuell statt pauschal argumentieren.</p></div>
+      <div class="kupon"><span class="nr">Kupon 4</span><h3><span>V</span>ereinbaren</h3><p>Den passenden nächsten Schritt klären.</p><p class="lern">Wer tut was, bis wann und wozu.</p></div>
+      <div class="kupon"><span class="nr">Kupon 5</span><h3><span>V</span>erbessern</h3><p>Das Gespräch reflektieren und einmal gezielt wiederholen.</p><p class="lern">Eine Verbesserung im Alltag umsetzen.</p></div>
+    </div>
+    <div class="abc"><span><b>A</b>Ausgangslage</span><span><b>B</b>Zielbild</span><span><b>C</b>Hindernisse</span></div>
+  </div>
+</section>
+
+<section id="finanz">
+  <div class="wrap finanz">
+    <p class="gross">19<small>Jahre Finanz- und Vermögensvertrieb,<br>2000 bis 2019</small></p>
+    <div>
+      <h2>Wo Vertrieb <em>Vertrauen</em> braucht.</h2>
+      <p class="intro" style="color:var(--text-hell)">In der Vermögensberatung entscheidet das erste Telefonat, ob es ein zweites gibt. Ich habe dort eine eigene Vertriebsstruktur aufgebaut und jeden Berater selbst ausgebildet.</p>
+      <p style="margin-top:18px;color:var(--text-dim)">Genau in diesem Feld startet Vertriebscoach im Ohr seinen ersten Piloten: Telefontraining über 90 Tage, begleitet von einem digitalen Coach. Ich bin dort der Praxis-Coach.</p>
+      <a class="bruecke" href="https://coachimohr.com/vertrieb/?utm_source=vertriebs-zirkel&utm_medium=referral&utm_campaign=website"><b>Vertriebscoach im Ohr <span class="amp">&amp;</span> ich</b><span>Externe Website →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="wege" style="padding-top:0">
+  <div class="wrap">
+    <h2>Drei Wege <em>in die Zusammenarbeit.</em></h2>
+    <div class="wege">
+      <a class="weg" href="#"><h3>VertriebsPerformance Check</h3><p>Für Geschäftsführung und Vertriebsleitung: Engpässe finden, Maßnahmen priorisieren.</p><span class="pf">Ansehen →</span></a>
+      <a class="weg" href="#"><h3>Vertriebsrad</h3><p>Für Verkäufer und Selbstständige: acht persönliche Bereiche, ein Schwerpunkt.</p><span class="pf">Ansehen →</span></a>
+      <a class="weg" href="#"><h3>PraxisPerformance 90</h3><p>Für Verkäufer und Teams: neunzig Tage Training an echten Gesprächen.</p><span class="pf">Ansehen →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="zitat">
+  <div class="wrap">
+    <blockquote>„Klarheit verkauft stärker als Druck.“</blockquote>
+    <p>„Ein Verkäufer braucht nicht immer jemanden, der ihm sagt, was er besser machen muss. Manchmal braucht er einfach jemanden, der ihm hilft, es selbst zu erkennen.“ Fares Chahrour</p>
+  </div>
+</section>
+
+<section class="schluss">
+  <div class="wrap">
+    <h2>Dreißig Minuten <em>unter vier Augen.</em></h2>
+    <p class="intro">Wir klären, wie Sie heute verkaufen, was Sie verändern möchten und woran es bisher scheitert. Ich rede Ihnen kein Problem ein.</p>
+    <a class="einloesen" href="https://calendly.com/fareschahrour/vertriebs-klarheitsgespraech?utm_source=website&utm_medium=referral&utm_campaign=erstgespraech">Erstgespräch vereinbaren <span>30 Min.</span></a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <div class="z">
+    <p class="claim">Klarheit im Kopf. Struktur im Gespräch. Ergebnis im Vertrieb.</p>
+    <ul><li><a href="mailto:fc@vertriebs-zirkel.de">fc@vertriebs-zirkel.de</a></li><li><a href="https://www.instagram.com/fares_chahrour2711/">Instagram</a></li><li><a href="https://coachimohr.com/vertrieb/?utm_source=vertriebs-zirkel&utm_medium=referral&utm_campaign=website">Vertriebscoach im Ohr</a></li><li><a href="#">Impressum</a></li><li><a href="#">Datenschutz</a></li></ul>
+  </div>
+  <p style="margin-top:20px">Website: <a href="https://felixrohde.com/?utm_source=vertriebs-zirkel&utm_medium=referral">Ezencia · Felix Rohde</a></p>
+</footer>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  // Guilloche-Band für den Rahmen
+  var band='<svg xmlns="'+NS+'" viewBox="0 0 60 20" preserveAspectRatio="none"><g fill="none" stroke="#0F1B2D" stroke-width=".55">';
+  for(var k=0;k<4;k++){var d='M0 10';for(var x=0;x<=60;x+=1){d+=' L'+x+' '+(10+8*Math.sin((x/60)*Math.PI*4+k*Math.PI/2)).toFixed(2)}band+='<path d="'+d+'"/>'}
+  band+='</g><g fill="none" stroke="#A9864F" stroke-width=".5">';
+  for(var k2=0;k2<2;k2++){var e='M0 10';for(var y=0;y<=60;y+=1){e+=' L'+y+' '+(10+5*Math.cos((y/60)*Math.PI*6+k2*Math.PI)).toFixed(2)}band+='<path d="'+e+'"/>'}
+  band+='</g></svg>';
+  document.documentElement.style.setProperty('--band','url("data:image/svg+xml,'+encodeURIComponent(band)+'")');
+  // Mikroschrift
+  var m='KLARHEIT IM KOPF · STRUKTUR IM GESPRÄCH · ERGEBNIS IM VERTRIEB · FARES CHAHROUR · SEIT 1999 · ';
+  document.getElementById('mikro').textContent=m.repeat(12);
+  // Rosette: 27 Ringe, einer pro Jahr ab 1999
+  function rosette(svg,farbeTinte){
+    var g=document.createElementNS(NS,'g');
+    for(var i=0;i<27;i++){
+      var jahr=1999+i, r0=18+i*2.85, amp=1.6+(i%3)*.5, k=12+(i%4)*3, ph=i*.7;
+      var d='';
+      for(var t=0;t<=360;t+=2){var a=t*Math.PI/180;var r=r0+amp*Math.sin(k*a+ph)+amp*.5*Math.sin((k+5)*a-ph);d+=(t?'L':'M')+(r*Math.cos(a)).toFixed(2)+' '+(r*Math.sin(a)).toFixed(2)}
+      var p=document.createElementNS(NS,'path');
+      p.setAttribute('d',d+'Z');p.setAttribute('fill','none');
+      var gold=(jahr>=2000&&jahr<=2019);
+      p.setAttribute('stroke',gold?'#A9864F':farbeTinte);
+      p.setAttribute('stroke-width',gold?'.7':'.45');
+      p.setAttribute('opacity',gold?'1':'.75');
+      p.dataset.jahr=jahr;
+      g.appendChild(p);
+    }
+    svg.appendChild(g);return g;
+  }
+  rosette(document.getElementById('ros'),'#0F1B2D');
+  var g2=rosette(document.getElementById('ros2'),'#A9B4C6');
+  document.querySelectorAll('.chronik li').forEach(function(li){
+    function an(on){
+      li.classList.toggle('an',on);
+      g2.querySelectorAll('path').forEach(function(p){
+        var j=+p.dataset.jahr, drin=j>=+li.dataset.von&&j<=+li.dataset.bis;
+        p.style.stroke=on&&drin?'#E9ECF1':'';p.style.strokeWidth=on&&drin?'1.1':'';
+        p.style.opacity=on&&!drin?'.3':'';
+      });
+    }
+    li.addEventListener('mouseenter',function(){an(true)});li.addEventListener('mouseleave',function(){an(false)});
+    li.tabIndex=0;li.addEventListener('focus',function(){an(true)});li.addEventListener('blur',function(){an(false)});
+  });
+})();
+</script>
+</body>
+</html>
