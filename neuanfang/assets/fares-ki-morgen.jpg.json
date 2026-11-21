@@ -1,0 +1,38 @@
+{
+  "created": "2026-11-21T19:49:20.172Z",
+  "model": "gemini-3-pro-image",
+  "inputs": [
+    "input/01-FaresPortrait.jpg",
+    "input/03-sessel-gestik.jpg"
+  ],
+  "person": "he",
+  "change": "Documentary-style photograph, early morning in a quiet modern office. The man, in his mid-forties with short grey hair and a short trimmed grey-and-brown beard exactly as in the first image, sits at a clean dark desk in profile facing left, on the phone with a black handset, his free hand making a calm explaining gesture, listening intently. Dark navy suit jacket, white shirt, no tie. Cool blue morning light through a large window behind him, the room in deep blue shadow, his face lit softly from the window. A printed call list and a pen on the desk, no screens, no readable text. Shallow depth of field, 50mm lens look, true-to-life skin. Keep the right third of the frame dark and calm.",
+  "aspectRatio": "3:2",
+  "imageSize": "2K",
+  "usage": {
+    "promptTokenCount": 786,
+    "candidatesTokenCount": 1323,
+    "totalTokenCount": 2406,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 270
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 516
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1120
+      }
+    ],
+    "thoughtsTokenCount": 297,
+    "serviceTier": "standard"
+  },
+  "aiGenerated": true,
+  "approvedByFelix": false,
+  "approvedByClient": false
+}
