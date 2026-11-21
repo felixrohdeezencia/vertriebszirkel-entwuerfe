@@ -36,6 +36,12 @@
 - Bildrechte für die Fotos.
 - Die neuen Anzugfotos vom 19.11. (falls entstanden) würden alle Richtungen stärken.
 
+## Rückmeldung der Wissensdatenbank (21.11.)
+
+- „VertriebsPerformance 360°“ ist vertraulich und kommt nicht auf die Website. In den vier Entwürfen steht es nicht; die alte Story-Seite nennt es aber noch.
+- Vertriebsrad und Farbtypen sind dort nur für die interne Nutzung im Coach freigegeben. Das Vertriebsrad steht schon auf Fares' eigener Seite als Angebot. Ob es öffentlich bleibt, muss Fares bestätigen.
+- Fares stellt sich selbst mit „25 Jahre Vertrieb“ vor. „Seit 1999“ von der jetzigen Seite ergibt 27 Jahre. Vor dem Livegang lässt du dir die Zahl von Fares bestätigen.
+
 ## Feste Regeln
 
 Keine erfundenen Zahlen, Kunden, Zitate oder Bewertungen. Partner und Investoren von Coach im Ohr nie nennen. Keine Preise. Branch und PR; kein Merge, kein Deploy, keine DNS-Änderung ohne Felix' Go.
