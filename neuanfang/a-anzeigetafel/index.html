@@ -13,6 +13,7 @@
 :root{
   --blau:#1431C4;        /* Tafelfeld */
   --blau-tief:#0E2391;
+  --nacht:#022A6C;       /* Hintergrund des Studiofotos */
   --tafel:#0B0E16;       /* Klappe */
   --klappe:#151A26;
   --naht:#05070C;
@@ -52,7 +53,9 @@ img{display:block;max-width:100%}
 .reihe .lbl{font-stretch:62%;font-weight:700;text-transform:uppercase;font-size:clamp(15px,1.4vw,20px);letter-spacing:.08em;color:var(--weiss-2);width:clamp(90px,10vw,150px)}
 
 /* Erster Bildschirm */
-.held{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(24px,4vw,64px);padding-block:clamp(28px,5vw,72px) clamp(40px,6vw,96px);align-items:end}
+.buehne{position:relative;background:var(--nacht);overflow:hidden;isolation:isolate}
+body>.kopf{background:var(--nacht);border-bottom:0;max-width:none;padding-inline:max(var(--gutter),calc((100vw - 1520px)/2 + var(--gutter)))}
+.held{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);min-height:min(calc(100svh - 74px),980px);padding-block:clamp(28px,5vw,72px) clamp(40px,6vw,96px);align-items:end}
 .tafel{display:grid;gap:10px}
 .held h1{font-stretch:75%;font-weight:700;font-size:clamp(30px,3.6vw,56px);line-height:1.04;letter-spacing:-.01em;max-width:18ch;margin-top:clamp(20px,3vw,40px);text-wrap:balance}
 .held .lede{max-width:52ch;margin-top:18px;color:var(--weiss-2)}
@@ -62,9 +65,15 @@ img{display:block;max-width:100%}
 .btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px -12px rgba(0,0,0,.6)}
 .btn .t{background:var(--tafel);color:var(--weiss);padding:4px 8px;border-radius:3px;font-variant-numeric:tabular-nums}
 .klein{font-size:14px;color:var(--weiss-2)}
-.foto{position:relative;align-self:stretch;min-height:420px;background:var(--tafel);border-radius:4px;overflow:hidden}
-.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-.foto figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;justify-content:space-between;gap:12px;padding:12px 14px;background:var(--tafel);font-stretch:70%;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
+/* Fares steht im Bild der Tafel: randlos, die Kanten laufen ins Blau aus */
+.foto{position:absolute;z-index:1;right:0;bottom:0;top:0;width:min(58vw,980px);margin:0;pointer-events:none}
+.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 18%;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 30%),linear-gradient(to bottom,transparent 0,#000 14%);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent 0,#000 30%),linear-gradient(to bottom,transparent 0,#000 14%);mask-composite:intersect}
+.foto figcaption{position:absolute;right:var(--gutter);bottom:18px;font-stretch:70%;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:var(--weiss-2);opacity:.85}
+.held .spalte{position:relative;z-index:2}
+.held .namensschild{align-self:end;justify-self:end;z-index:2;display:flex;flex-direction:column;align-items:flex-end;gap:6px;margin-bottom:28px}
+.namensschild .flap.word{--flap-h:clamp(40px,3.4vw,56px)}
 .freigabe{background:none;color:inherit;border-bottom:2px dotted #FFD9D9;position:relative}
 .freigabe::after{content:"Freigabe Fares";font:600 10px/1 Archivo,sans-serif;font-stretch:80%;letter-spacing:.06em;text-transform:uppercase;background:#FFD9D9;color:#6B0A0A;padding:3px 5px;border-radius:2px;margin-left:6px;vertical-align:middle;white-space:nowrap}
 
@@ -131,10 +140,17 @@ blockquote+p{margin-top:24px;color:var(--weiss-2)}
 .uhr .flap{--flap-h:clamp(88px,15vw,210px)}
 .uhr .punkt{font-stretch:62%;font-weight:800;font-size:clamp(70px,12vw,170px);line-height:1;align-self:center;color:var(--weiss)}
 
-.morgen{position:relative;margin:0;background:var(--tafel)}
-.morgen img{width:100%;height:clamp(320px,56vw,760px);object-fit:cover;object-position:40% 40%}
-.morgen figcaption{position:absolute;left:var(--gutter);bottom:20px;display:flex;gap:12px;background:var(--tafel);padding:10px 14px;font-stretch:70%;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
-.morgen figcaption span+span{color:var(--weiss-2)}
+/* Kapitel: der Morgen. Fares links im Fensterlicht, die Zeile rechts im Dunkel */
+.morgen{position:relative;margin:0;background:#0B1118;min-height:min(92svh,940px);display:grid;align-items:end;overflow:hidden}
+.morgen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 35%}
+.morgen::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 45%,rgba(11,17,24,.55) 68%,rgba(11,17,24,.92) 100%),linear-gradient(0deg,rgba(11,17,24,.75) 0,transparent 30%)}
+.morgen .text{position:relative;z-index:2;justify-self:end;width:min(560px,100%);padding:0 var(--gutter) clamp(48px,7vw,96px)}
+.morgen .text p.zeile{font-stretch:62%;font-weight:800;text-transform:uppercase;font-size:clamp(52px,6.4vw,104px);line-height:.9;letter-spacing:-.005em}
+.morgen .text p.zeile span{color:var(--weiss-2);font-weight:400}
+.morgen .text .reihe{margin-top:22px}
+.morgen .text .flap{--flap-h:clamp(48px,4.4vw,72px);background:linear-gradient(#222A3C 0 49.4%,var(--naht) 49.4% 50.6%,#1A2131 50.6%)}
+.morgen .text .unter{margin-top:18px;color:var(--weiss-2);max-width:40ch}
+.morgen small.ki{position:absolute;z-index:2;left:var(--gutter);bottom:18px;font-stretch:70%;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:var(--weiss-2);opacity:.85}
 footer{padding-block:48px;border-top:1px solid rgba(243,245,251,.25);font-size:15px;color:var(--weiss-2)}
 footer .zeilen{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
 footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px}
@@ -142,8 +158,16 @@ footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px
 
 @media (max-width:900px){
   .kopf nav{display:none}
-  .held{grid-template-columns:1fr}
-  .foto{min-height:300px;aspect-ratio:4/3}
+  .held{grid-template-columns:1fr;min-height:0;padding-top:0}
+  .held .namensschild{display:none}
+  .foto{position:relative;top:auto;width:auto;height:clamp(380px,92vw,560px);margin:0 calc(var(--gutter)*-1) -96px}
+  .foto img{object-position:58% 10%;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 34%);mask-image:linear-gradient(to top,transparent 0,#000 34%);mask-composite:add;-webkit-mask-composite:source-over}
+  .foto figcaption{top:14px;bottom:auto}
+  .morgen{min-height:0;display:block}
+  .morgen img{position:relative;height:clamp(360px,110vw,620px);object-position:34% 40%}
+  .morgen::after{background:linear-gradient(0deg,#0B1118 0,transparent 26%);height:clamp(360px,110vw,620px)}
+  .morgen .text{width:auto;margin-top:-64px;padding-bottom:56px}
+  .morgen small.ki{top:14px;bottom:auto}
   .vs{grid-template-columns:repeat(5,minmax(0,1fr))}
   .v{min-height:120px;padding:12px 8px}
   .v .w{font-size:13px;letter-spacing:.02em}
@@ -174,10 +198,14 @@ footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px
   </nav>
   <a class="uhr-mini" href="https://calendly.com/fareschahrour/vertriebs-klarheitsgespraech?utm_source=website&utm_medium=referral&utm_campaign=erstgespraech">Erstgespräch <b>30:00</b></a>
 </header>
-
 <main>
+<div class="buehne">
+<figure class="foto">
+  <img src="../assets/fares-ki-held.jpg" alt="Fares Chahrour im dunkelblauen Anzug, mit einem Telefonhörer am Ohr" width="1200" height="1490" fetchpriority="high">
+  <figcaption>KI-Bild</figcaption>
+</figure>
 <div class="wrap held">
-  <div>
+  <div class="spalte">
     <div class="tafel" aria-hidden="true">
       <div class="reihe"><span class="lbl">Im Vertrieb seit</span><span class="flap" data-flip="1">1</span><span class="flap" data-flip="9">9</span><span class="flap" data-flip="9">9</span><span class="flap" data-flip="9">9</span></div>
       <div class="reihe"><span class="lbl">Spielzeit</span><span class="flap" data-flip="2">2</span><span class="flap" data-flip="7">7</span><span class="flap word" data-word="JAHRE">JAHRE</span></div>
@@ -190,10 +218,8 @@ footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px
       <p class="klein">Kostenlos. Buchung über Calendly (<a href="#">Datenschutz</a>).</p>
     </div>
   </div>
-  <figure class="foto">
-    <img src="../assets/fares-ki-held.jpg" alt="Fares Chahrour im dunkelblauen Anzug vor blauem Hintergrund, mit einem Telefonhörer am Ohr" width="1200" height="1490">
-    <figcaption><span>Fares Chahrour</span><span>KI-Bild</span></figcaption>
-  </figure>
+  <div class="namensschild" aria-hidden="true"><span class="flap word" data-word="FARES">FARES</span><span class="flap word" data-word="CHAHROUR">CHAHROUR</span></div>
+</div>
 </div>
 
 <section class="dunkel" id="laufbahn">
@@ -239,7 +265,15 @@ footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px
   </div>
 </section>
 
-<figure class="morgen"><img src="../assets/fares-ki-morgen.jpg" alt="Fares Chahrour am Schreibtisch im Morgenlicht, telefonierend, mit erklärender Hand" width="1600" height="1073" loading="lazy"><figcaption><span>Jeden Morgen am Telefon</span><span>KI-Bild</span></figcaption></figure>
+<figure class="morgen">
+  <img src="../assets/fares-ki-morgen.jpg" alt="Fares Chahrour am Schreibtisch im Morgenlicht, telefonierend, mit erklärender Hand" width="1600" height="1073" loading="lazy">
+  <figcaption class="text">
+    <p class="zeile">Jeden Morgen. <span>Seit 1999.</span></p>
+    <div class="reihe" aria-label="80 bis 110 Anrufe am Tag"><span class="flap">8</span><span class="flap">0</span><span class="flap word">BIS</span><span class="flap">1</span><span class="flap">1</span><span class="flap">0</span></div>
+    <p class="unter">Anrufe am Tag, bis heute. Was ich trainiere, habe ich am selben Morgen selbst gemacht.</p>
+  </figcaption>
+  <small class="ki">KI-Bild</small>
+</figure>
 
 <section class="dunkel" id="finanz">
   <div class="wrap heim">
