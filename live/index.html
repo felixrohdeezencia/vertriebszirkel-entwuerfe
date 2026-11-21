@@ -13,8 +13,9 @@
 <meta property="og:description" content="27 Jahre im Vertrieb. Und jeden Morgen noch selbst am Telefon.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
-<meta property="og:image" content="https://vertriebs-zirkel.de/images/fares-ki-held.webp">
+<meta property="og:image" content="https://vertriebs-zirkel.de/images/fares-ki-held-1200.webp">
 <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="/images/fares-ki-held-900.webp" imagesrcset="/images/fares-ki-held-600.webp 600w, /images/fares-ki-held-900.webp 900w, /images/fares-ki-held-1200.webp 1200w" imagesizes="(max-width: 900px) 100vw, min(58vw, 980px)" fetchpriority="high">
 <style>
 @font-face{font-family:Archivo;src:url(/fonts/archivo-latin.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
 :root{
@@ -45,7 +46,8 @@ img{display:block;max-width:100%}
 .kopf .name{font-stretch:75%;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px;text-decoration:none}
 .kopf .name span{font-weight:400;opacity:.8}
 .kopf nav{display:flex;gap:28px;font-size:15px}
-.kopf nav a{text-decoration:none}
+.kopf nav a{text-decoration:none;white-space:nowrap;padding-block:12px}
+.kopf .name{white-space:nowrap;padding-block:12px}
 .kopf nav a:hover{text-decoration:underline}
 .uhr-mini{display:inline-flex;align-items:center;gap:10px;background:var(--tafel);padding:10px 14px;text-decoration:none;font-stretch:70%;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:14px;min-height:44px}
 .uhr-mini b{font-variant-numeric:tabular-nums;font-size:18px;letter-spacing:.02em}
@@ -160,11 +162,15 @@ blockquote+p{margin-top:24px;color:var(--weiss-2)}
 .morgen small.ki{position:absolute;z-index:2;left:var(--gutter);bottom:18px;font-stretch:70%;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:var(--weiss-2);opacity:.85}
 footer{padding-block:48px;border-top:1px solid rgba(243,245,251,.25);font-size:15px;color:var(--weiss-2)}
 footer .zeilen{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
-footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px}
+footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:0 22px}
+footer ul a{display:inline-block;padding-block:12px}
+.fussnav{display:flex;flex-wrap:wrap;gap:4px 24px;margin-bottom:32px;padding-bottom:28px;border-bottom:1px solid rgba(243,245,251,.18)}
+.fussnav a{font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:15px;color:var(--weiss);text-decoration:none;padding-block:12px}
+.fussnav a:hover{text-decoration:underline}
 footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px}
 
+@media (max-width:1180px){.kopf nav{display:none}}
 @media (max-width:900px){
-  .kopf nav{display:none}
   .held{grid-template-columns:1fr;min-height:0;padding-top:0}
   .held .namensschild{display:none}
   .foto{position:relative;top:auto;width:auto;height:clamp(380px,92vw,560px);margin:0 calc(var(--gutter)*-1) -96px}
@@ -209,7 +215,7 @@ footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px
 <main>
 <div class="buehne">
 <figure class="foto">
-  <img src="/images/fares-ki-held.webp" alt="Fares Chahrour im dunkelblauen Anzug, mit einem Telefonhörer am Ohr" width="1200" height="1490" fetchpriority="high">
+  <img src="/images/fares-ki-held-900.webp" srcset="/images/fares-ki-held-600.webp 600w, /images/fares-ki-held-900.webp 900w, /images/fares-ki-held-1200.webp 1200w" sizes="(max-width: 900px) 100vw, min(58vw, 980px)" decoding="async" alt="Fares Chahrour im dunkelblauen Anzug, mit einem Telefonhörer am Ohr" width="1200" height="1490" fetchpriority="high">
   <figcaption>KI-Bild</figcaption>
 </figure>
 <div class="wrap held">
@@ -274,7 +280,7 @@ footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px
 </section>
 
 <figure class="morgen">
-  <img src="/images/fares-ki-morgen.webp" alt="Fares Chahrour am Schreibtisch im Morgenlicht, telefonierend, mit erklärender Hand" width="1600" height="1073" loading="lazy">
+  <img src="/images/fares-ki-morgen-1200.webp" srcset="/images/fares-ki-morgen-800.webp 800w, /images/fares-ki-morgen-1200.webp 1200w, /images/fares-ki-morgen-1600.webp 1600w, /images/fares-ki-morgen-2000.webp 2000w" sizes="100vw" decoding="async" alt="Fares Chahrour am Schreibtisch im Morgenlicht, telefonierend, mit erklärender Hand" width="1600" height="1073" loading="lazy">
   <figcaption class="text">
     <p class="zeile">Jeden Morgen. <span>Seit 1999.</span></p>
     <div class="reihe" aria-label="80 bis 110 Anrufe am Tag"><span class="flap">8</span><span class="flap">0</span><span class="flap word">BIS</span><span class="flap">1</span><span class="flap">1</span><span class="flap">0</span></div>
@@ -333,6 +339,9 @@ footer .claim{font-stretch:75%;font-weight:700;color:var(--weiss);font-size:17px
 </main>
 
 <footer class="wrap">
+  <nav class="fussnav" aria-label="Seiten">
+    <a href="/angebote/">Angebote</a><a href="/vertriebscheck/">VertriebsPerformance Check</a><a href="/vertriebsrad/">Vertriebsrad</a><a href="/praxisperformance-90/">PraxisPerformance 90</a><a href="/ueber-fares/">Über Fares</a><a href="/wissen/">Wissen</a><a href="/kontakt/">Kontakt</a>
+  </nav>
   <div class="zeilen">
     <p class="claim">Klarheit im Kopf. Struktur im Gespräch. Ergebnis im Vertrieb.</p>
     <ul>
