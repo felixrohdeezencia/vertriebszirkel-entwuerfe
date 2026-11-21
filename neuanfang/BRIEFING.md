@@ -36,6 +36,12 @@
 - Bildrechte für die Fotos.
 - Die neuen Anzugfotos vom 19.11. (falls entstanden) würden alle Richtungen stärken.
 
+## Entscheidung von Fares (WhatsApp, 21.11., 12:33)
+
+- Richtung **A · Anzeigetafel** gewählt („Dein Favorit ist auch meiner“).
+- „80 bis 110 Anrufe am Tag“ darf auf die Seite.
+- „Seit 1999“ statt „25 Jahre“.
+
 ## Rückmeldung der Wissensdatenbank (21.11.)
 
 - „VertriebsPerformance 360°“ ist vertraulich und kommt nicht auf die Website. In den vier Entwürfen steht es nicht; die alte Story-Seite nennt es aber noch.
