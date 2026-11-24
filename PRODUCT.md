@@ -81,3 +81,9 @@ Absent, never invent: testimonials, client logos, case studies, success rates.
 ## Accessibility & Inclusion
 
 WCAG 2.2 AA. Many visitors are over 45 and on a phone: body text at least 17px, high contrast, tap targets at least 44px.
+
+## Notiz: Feedback Fares, 24.11.2026 (noch nicht umsetzen)
+- Die Startseite gefällt ihm.
+- Die Unterseiten zeigten noch die alte Seite. Sie sind mit PR #7 ins Anzeigetafel-Design übertragen.
+- Er empfindet den Look als „fußballerisch/Anstoß“. Die Seite spiegelt für ihn noch nicht, wer er ist.
+- Umbau erst nach dem Essenzia-Fragebogen, nicht vorher.
